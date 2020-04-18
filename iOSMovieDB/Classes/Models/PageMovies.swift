@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PageMovies: Codable {
+public struct PageMovies: Codable {
     var page: Int
     var results: [MovieResume]
 }

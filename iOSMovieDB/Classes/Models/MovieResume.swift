@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MovieResume: Codable {
+public struct MovieResume: Codable {
     
     var adult: Bool
     var overview: String

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Genre: Codable {
+public struct Genre: Codable {
 
     var id: Int
     var name: String

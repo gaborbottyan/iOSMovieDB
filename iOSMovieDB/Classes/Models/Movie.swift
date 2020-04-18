@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Movie: Codable {
+public struct Movie: Codable {
 
     var id: Int
     var originalTitle: String
