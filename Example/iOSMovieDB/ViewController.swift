@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iOSMovieDB
 
 class ViewController: UIViewController {
 
