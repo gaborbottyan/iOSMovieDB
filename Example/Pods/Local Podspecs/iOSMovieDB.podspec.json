@@ -1,0 +1,27 @@
+{
+  "name": "iOSMovieDB",
+  "version": "0.1.0",
+  "summary": "A short description of iOSMovieDB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/diazavilasebastian@gmail.com/iOSMovieDB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "diazavilasebastian@gmail.com": "diazavilasebastian@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/diazavilasebastian@gmail.com/iOSMovieDB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSMovieDB/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.9"
+    ]
+  }
+}

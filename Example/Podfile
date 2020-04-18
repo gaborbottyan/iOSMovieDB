@@ -1,4 +1,6 @@
 use_frameworks!
+platform :ios, '9.0'
+inhibit_all_warnings!
 
 target 'iOSMovieDB_Example' do
   pod 'iOSMovieDB', :path => '../'

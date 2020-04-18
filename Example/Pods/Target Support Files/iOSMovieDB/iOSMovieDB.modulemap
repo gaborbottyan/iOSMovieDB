@@ -1,0 +1,6 @@
+framework module iOSMovieDB {
+  umbrella header "iOSMovieDB-umbrella.h"
+
+  export *
+  module * { export * }
+}
