@@ -18,34 +18,56 @@ public struct Movie: Codable {
     var popularity: Double
     var voteAverage: Double
     var posterPath: String
+    var adult: Bool
+    var budget: Int
+    var releaseDate: String
+    var revenue: Int
+    var video: Bool
+    var voteCount: Int
     
     var imdbId: String?
     var productionCompanies: [Company]? = []
     var genres: [Genre]? = []
     var status: String?
     var tagline: String?
-        
+    var backdropPath: String?
+    var belongsToCollection: MovieCollection?
+    var homePage: String?
+    var productionCountries: [Countrie]? = []
+    var runtime: String?
+    var spokenLanguages: [Language] = []
+    
     var urlPoster: URL {
         return URL(string: "https://image.tmdb.org/t/p/w500"+posterPath)!
     }
     
-
     enum CodingKeys: String, CodingKey {
         case id = "id"
-        case imdbId = "imdb_id"
-        case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case overview = "overview"
+        case originalLanguage = "original_language"
+        case title = "title"
         case popularity = "popularity"
+        case voteAverage = "vote_average"
         case posterPath = "poster_path"
-
+        case adult = "adult"
+        case budget = "budget"
+        case releaseDate = "release_date"
+        case revenue = "revenue"
+        case status = "status"
+        case video = "video"
+        case voteCount = "vote_count"
+        
+        case imdbId = "imdb_id"
         case productionCompanies = "production_companies"
         case genres = "genres"
-
-        case status = "status"
         case tagline = "tagline"
-        case title = "title"
-        case voteAverage = "vote_average"
+        case backdropPath = "backdrop_path"
+        case belongsToCollection = "belongs_to_collection"
+        case homePage = "homepage"
+        case productionCountries = "production_countries"
+        case runtime = "runtime"
+        case spokenLanguages = "spoken_languages"
     }
     
     
@@ -58,6 +80,12 @@ public struct Movie: Codable {
         self.popularity = resume.popularity
         self.voteAverage = resume.voteAverage
         self.posterPath = resume.posterPath
+        self.adult = resume.adult
+        self.releaseDate = resume.releaseDate
+        self.voteCount = resume.voteCount
+        self.video = resume.video
+        self.revenue = 0
+        self.budget = 0
     }
     
 }

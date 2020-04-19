@@ -8,18 +8,27 @@
 
 import Foundation
 
-public struct Company: Codable {
+public class Company: Codable {
 
     var id: Int
     var logoPath: String?
     var name: String
     var originCountry: String
+    var description: String
+    var headquarters: String
+    var homepage: String
+    var parentCompany: Company?
+    
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case logoPath = "logo_path"
         case name = "name"
         case originCountry = "origin_country"
+        case description = "description"
+        case headquarters = "headquarters"
+        case homepage = "homepage"
+        case parentCompany = "parent_company"
     }
     
     func getURLLogo() -> URL? {
