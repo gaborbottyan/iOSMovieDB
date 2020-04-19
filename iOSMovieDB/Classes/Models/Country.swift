@@ -7,8 +7,7 @@
 
 import Foundation
 
-public struct Countrie: Codable {
-    
+public struct Country: Codable {
     var iso: String
     var name: String
     

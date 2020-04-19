@@ -17,7 +17,6 @@ public struct Movie: Codable {
     var title: String
     var popularity: Double
     var voteAverage: Double
-    var posterPath: String
     var adult: Bool
     var budget: Int
     var releaseDate: String
@@ -26,18 +25,20 @@ public struct Movie: Codable {
     var voteCount: Int
     
     var imdbId: String?
-    var productionCompanies: [Company]? = []
+    var posterPath: String?
+    var productionCompanies: [ResumeCompany]? = []
     var genres: [Genre]? = []
     var status: String?
     var tagline: String?
     var backdropPath: String?
-    var belongsToCollection: MovieCollection?
+    var belongsToCollection: ResumeCollection?
     var homePage: String?
-    var productionCountries: [Countrie]? = []
-    var runtime: String?
+    var productionCountries: [Country]? = []
+    var runtime: Int?
     var spokenLanguages: [Language] = []
     
-    var urlPoster: URL {
+    var urlPoster: URL? {
+        guard let posterPath = self.posterPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500"+posterPath)!
     }
     
@@ -89,3 +90,45 @@ public struct Movie: Codable {
     }
     
 }
+
+public struct MovieResume: Codable {
+    
+    var adult: Bool
+    var overview: String
+    var releaseDate: String
+    var genreIds: [Int]
+    var id: Int
+    var originalTitle: String
+    var originalLanguage: String
+    var title: String
+    var popularity: Double
+    var voteCount: Int
+    var video: Bool
+    var voteAverage: Double
+    
+    var posterPath: String?
+    var backdropPath: String?
+
+    var urlPoster: URL? {
+        guard let posterPath = self.posterPath else { return nil }
+        return URL(string: "https://image.tmdb.org/t/p/w500"+posterPath)!
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case adult = "adult"
+        case overview = "overview"
+        case releaseDate = "release_date"
+        case genreIds = "genre_ids"
+        case id =  "id"
+        case originalTitle = "original_title"
+        case originalLanguage = "original_language"
+        case title = "title"
+        case backdropPath = "backdrop_path"
+        case popularity = "popularity"
+        case voteCount = "vote_count"
+        case video = "video"
+        case voteAverage = "vote_average"
+        case posterPath = "poster_path"
+    }
+}
+

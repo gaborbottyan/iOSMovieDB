@@ -17,7 +17,7 @@ public struct Company: Codable {
     var description: String
     var headquarters: String
     var homepage: String
-    var parentCompany: ParentCompanie?
+    var parentCompany: ParentCompany?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -35,4 +35,19 @@ public struct Company: Codable {
         return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
     }
 
+}
+
+
+public struct ResumeCompany: Codable {
+    var id: Int
+    var logoPath: String?
+    var name: String
+    var originCountry: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case logoPath = "logo_path"
+        case name = "name"
+        case originCountry = "origin_country"
+    }
 }

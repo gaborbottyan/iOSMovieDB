@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ParentCompanie: Codable {
+public struct ParentCompany: Codable {
     var id: Int
     var logoPath: String?
     var name: String
