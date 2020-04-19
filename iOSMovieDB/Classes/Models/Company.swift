@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Company: Codable {
+public struct Company: Codable {
 
     var id: Int
     var logoPath: String?
@@ -17,9 +17,8 @@ public class Company: Codable {
     var description: String
     var headquarters: String
     var homepage: String
-    var parentCompany: Company?
+    var parentCompany: ParentCompanie?
     
-
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case logoPath = "logo_path"
