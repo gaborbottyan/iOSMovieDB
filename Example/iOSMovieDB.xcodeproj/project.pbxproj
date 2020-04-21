@@ -612,6 +612,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87FABEB1294A1CF9E4A4ECF8 /* Pods-iOSMovieDB_Tests.debug.xcconfig */;
 			buildSettings = {
+				API_KEY = 6893e0b3a6030f46d850edf87283de46;
+				BASE_URL = "https://api.themoviedb.org/3/movie";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -634,6 +636,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDD666A5193E65469D7E4BC3 /* Pods-iOSMovieDB_Tests.release.xcconfig */;
 			buildSettings = {
+				API_KEY = 6893e0b3a6030f46d850edf87283de46;
+				BASE_URL = "https://api.themoviedb.org/3/movie";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
