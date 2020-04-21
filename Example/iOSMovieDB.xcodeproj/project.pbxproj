@@ -20,6 +20,7 @@
 		41874A21244CEB3100B4FE79 /* PageMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = 41874A20244CEB3100B4FE79 /* PageMovies.json */; };
 		41874A23244CEC3300B4FE79 /* ResumeCompany.json in Resources */ = {isa = PBXBuildFile; fileRef = 41874A22244CEC3300B4FE79 /* ResumeCompany.json */; };
 		41874A25244CEC7900B4FE79 /* ResumeCompanyNil.json in Resources */ = {isa = PBXBuildFile; fileRef = 41874A24244CEC7900B4FE79 /* ResumeCompanyNil.json */; };
+		41874A30244E809E00B4FE79 /* ApiRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41874A2F244E809E00B4FE79 /* ApiRouterTests.swift */; };
 		41CF0CF3244BE31700C45F1E /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF0CF1244BE30300C45F1E /* ModelTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		41874A20244CEB3100B4FE79 /* PageMovies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PageMovies.json; sourceTree = "<group>"; };
 		41874A22244CEC3300B4FE79 /* ResumeCompany.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ResumeCompany.json; sourceTree = "<group>"; };
 		41874A24244CEC7900B4FE79 /* ResumeCompanyNil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ResumeCompanyNil.json; sourceTree = "<group>"; };
+		41874A2F244E809E00B4FE79 /* ApiRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouterTests.swift; sourceTree = "<group>"; };
 		41CF0CF1244BE30300C45F1E /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		4D0AFAD84E3910CA9F922EC3 /* iOSMovieDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSMovieDB.podspec; path = ../iOSMovieDB.podspec; sourceTree = "<group>"; };
 		531C831CB5158C8A37B6C3C9 /* Pods-iOSMovieDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMovieDB_Example.release.xcconfig"; path = "Target Support Files/Pods-iOSMovieDB_Example/Pods-iOSMovieDB_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			name = Json;
 			sourceTree = "<group>";
 		};
+		41874A2E244E808200B4FE79 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				41874A2F244E809E00B4FE79 /* ApiRouterTests.swift */,
+			);
+			name = ServiceTests;
+			sourceTree = "<group>";
+		};
 		41CF0CEE244BE14D00C45F1E /* ModelsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				41874A2E244E808200B4FE79 /* ServiceTests */,
 				418749FA244CCFCA00B4FE79 /* Json */,
 				418749F7244CCC3000B4FE79 /* FileMapper */,
 				41CF0CEE244BE14D00C45F1E /* ModelsTests */,
@@ -438,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41874A30244E809E00B4FE79 /* ApiRouterTests.swift in Sources */,
 				418749FF244CD3E100B4FE79 /* FileMapper.swift in Sources */,
 				41CF0CF3244BE31700C45F1E /* ModelTests.swift in Sources */,
 			);

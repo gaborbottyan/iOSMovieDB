@@ -41,23 +41,23 @@ enum ApiRouter {
     
     var parameters: [String : Any] {
         
-        var parameters = [
-                            "api_key":"\(ApiRouter.ApiKey)",
-                            "language":"en-US"
-                        ]
+        var param = [
+                        "api_key":"\(ApiRouter.ApiKey)",
+                        "language":"en-US"
+                    ]
         switch self {
         case .getTopRated(let page):
-            parameters["page"] = "\(page)"
+            param["page"] = "\(page)"
         case .getUpcoming(let page):
-            parameters["page"] = "\(page)"
+            param["page"] = "\(page)"
         case .getPopular(let page):
-            parameters["page"] = "\(page)"
+            param["page"] = "\(page)"
         case .getNowPlaying(let page):
-            parameters["page"] = "\(page)"
+            param["page"] = "\(page)"
         default:
             break
         }
-        return parameters
+        return param
     }
 }
 
@@ -70,6 +70,6 @@ extension ApiRouter: URLRequestConvertible {
 }
 
 extension ApiRouter {
-    static let baseURL = Bundle.main.object(forInfoDictionaryKey: "BaseUrl") as? String
-    static let ApiKey = Bundle.main.object(forInfoDictionaryKey: "ApiKey") as? String
+    static let baseURL = "https://api.themoviedb.org/3/movie"
+    static let ApiKey = "6893e0b3a6030f46d850edf87283de46"
 }
