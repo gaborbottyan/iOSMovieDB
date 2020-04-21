@@ -20,27 +20,44 @@ enum ApiRouter {
     var path: String {
         switch self {
         case .getMovie(let id):
-            return "\(ApiRouter.baseURL)/\(id)?api_key=\(ApiRouter.ApiKey)&language=es-US"
+            return "\(ApiRouter.baseURL)/\(id)"
             
         case .getTopRated(let page):
-            return "\(ApiRouter.baseURL)/top_rated?api_key=\(ApiRouter.ApiKey)&language=en-US&page=\(page)"
+            return "\(ApiRouter.baseURL)/top_rated"
             
         case .getUpcoming(let page):
-            return "\(ApiRouter.baseURL)/upcoming?api_key=\(ApiRouter.ApiKey)&language=en-US&page=\(page)"
+            return "\(ApiRouter.baseURL)/upcoming"
             
         case .getPopular(let page):
-            return "\(ApiRouter.baseURL)/popular?api_key=\(ApiRouter.ApiKey)&language=en-US&page=\(page)"
+            return "\(ApiRouter.baseURL)/popular"
             
         case .getNowPlaying(let page):
-            return "\(ApiRouter.baseURL)/now_playing?api_key=\(ApiRouter.ApiKey)&language=en-US&page=\(page)"
+            return "\(ApiRouter.baseURL)/now_playing"
             
         case .getLatest:
-            return "\(ApiRouter.baseURL)/latest?api_key=\(ApiRouter.ApiKey)&language=en-US"
+            return "\(ApiRouter.baseURL)/latest"
         }
     }
     
     var parameters: [String : Any] {
-        return [:]
+        
+        var parameters = [
+                            "api_key":"\(ApiRouter.ApiKey)",
+                            "language":"en-US"
+                        ]
+        switch self {
+        case .getTopRated(let page):
+            parameters["page"] = "\(page)"
+        case .getUpcoming(let page):
+            parameters["page"] = "\(page)"
+        case .getPopular(let page):
+            parameters["page"] = "\(page)"
+        case .getNowPlaying(let page):
+            parameters["page"] = "\(page)"
+        default:
+            break
+        }
+        return parameters
     }
 }
 
@@ -48,7 +65,7 @@ extension ApiRouter: URLRequestConvertible {
     func asURLRequest() throws -> URLRequest {
         let url = try self.path.asURL()
         let request = URLRequest(url: url)
-        return try URLEncoding.default.encode(request, with: self.parameters)
+        return try URLEncoding.queryString.encode(request, with: self.parameters)
     }
 }
 
