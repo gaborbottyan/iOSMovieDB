@@ -37,6 +37,7 @@
 		3D317145F0CA3D74E737AB0B919AB6E9 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A6FA43D73B6F4ACA3FDEB5B24D7C98 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		405AB644E5E32AB19AE8697B4C0CE124 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C07C1C0C49EB91EB2AAE53DFF357A3A7 /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		416E7EED244FD93700D94648 /* Credencial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E7EEC244FD93700D94648 /* Credencial.swift */; };
+		416E7EF0244FE09200D94648 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E7EEF244FE09200D94648 /* ProviderProtocol.swift */; };
 		41874A29244E635A00B4FE79 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41874A28244E635A00B4FE79 /* ServiceProtocol.swift */; };
 		41874A2B244E683E00B4FE79 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41874A2A244E683E00B4FE79 /* ApiService.swift */; };
 		41874A2D244E69EA00B4FE79 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41874A2C244E69EA00B4FE79 /* ApiRouter.swift */; };
@@ -250,6 +251,7 @@
 		3DBA40846B8803BA18BB580795FAECFE /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Matchers/MatcherFunc.swift; sourceTree = "<group>"; };
 		4075591D1990A07845228907D35F7C92 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Sources/Quick/World.swift; sourceTree = "<group>"; };
 		416E7EEC244FD93700D94648 /* Credencial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credencial.swift; sourceTree = "<group>"; };
+		416E7EEF244FE09200D94648 /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
 		41784F2BCBCF37D32B303DF258E402DB /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Sources/QuickObjectiveC/Quick.h; sourceTree = "<group>"; };
 		41874A28244E635A00B4FE79 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		41874A2A244E683E00B4FE79 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -508,6 +510,14 @@
 				6FE6CA9C25A9CD4FD644F6261B756AF1 /* Support Files */,
 			);
 			path = Quick;
+			sourceTree = "<group>";
+		};
+		416E7EEE244FE07B00D94648 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				416E7EEF244FE09200D94648 /* ProviderProtocol.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		41874A27244E634300B4FE79 /* ServiceProtocol */ = {
@@ -780,6 +790,7 @@
 		DC1EE44E6890A53C144C723B449575F7 /* iOSMovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				416E7EEE244FE07B00D94648 /* Provider */,
 				41874A27244E634300B4FE79 /* ServiceProtocol */,
 				C181883D6261B8CB3F65DD043F282EDB /* Models */,
 				8D60DB5A265B2E87DC5A45A7607CD644 /* Pod */,
@@ -1126,6 +1137,7 @@
 				29999D6C9A60B2661C7E9282715E7B52 /* Country.swift in Sources */,
 				C580D9CCB72FC02F3A053585DAB459BD /* Genre.swift in Sources */,
 				9A15F8E0409690F719FBCB06DF0ABB66 /* iOSMovieDB-dummy.m in Sources */,
+				416E7EF0244FE09200D94648 /* ProviderProtocol.swift in Sources */,
 				8CD0FE90410EE8FFE3AA6C8BA5E27890 /* Language.swift in Sources */,
 				FED26019676B6C1DE71941F31EDAD22F /* Movie.swift in Sources */,
 				41874A2B244E683E00B4FE79 /* ApiService.swift in Sources */,
