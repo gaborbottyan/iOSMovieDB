@@ -36,4 +36,7 @@ protocol ServiceProtocol {
     func fetchNowPlaying(page: Int, completion: @escaping resultCompletion)
     func fetchLatest(completion: @escaping resultCompletion)
     
+    init(baseUrl: String,
+         apiKey: String,
+         configuration: URLSessionConfiguration)
 }

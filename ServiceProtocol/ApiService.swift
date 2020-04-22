@@ -10,12 +10,13 @@ import Alamofire
 
 class ApiService: ServiceProtocol {
     
-    var networkingManager: SessionManager
-      
-    init(configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
+    required init(baseUrl: String, apiKey: String, configuration: URLSessionConfiguration = .default) {
         networkingManager = SessionManager(configuration: configuration)
+        Credencial.shared.addCredencial(baseUrl: baseUrl, apiKey: apiKey)
     }
-  
+    
+    var networkingManager: SessionManager
+        
     func fetchMovie(id: Int, completion: @escaping (Result<Data>) -> Void) {
         networkingManager.request(ApiRouter.getMovie(id: id)).validate().responseData { response in
             completion(self.handlerResponse(response: response))

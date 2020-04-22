@@ -40,11 +40,7 @@ enum ApiRouter {
     }
     
     var parameters: [String : Any] {
-        
-        var param = [
-                        "api_key":"\(ApiRouter.ApiKey)",
-                        "language":"en-US"
-                    ]
+        var param = ["api_key":"\(ApiRouter.ApiKey)","language":"en-US"]
         switch self {
         case .getTopRated(let page):
             param["page"] = "\(page)"
@@ -70,6 +66,6 @@ extension ApiRouter: URLRequestConvertible {
 }
 
 extension ApiRouter {
-    static let baseURL = "https://api.themoviedb.org/3/movie"
-    static let ApiKey = "6893e0b3a6030f46d850edf87283de46"
+    static let baseURL = Credencial.shared.baseURL
+    static let ApiKey = Credencial.shared.apiKey
 }
