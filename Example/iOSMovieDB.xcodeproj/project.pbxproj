@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416A2969245274FD00ECEA0F /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416A2967245274EF00ECEA0F /* ProviderTests.swift */; };
+		416A296B245275C300ECEA0F /* ServiceMockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416A296A245275C300ECEA0F /* ServiceMockProtocol.swift */; };
 		418749FF244CD3E100B4FE79 /* FileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418749F8244CCC7100B4FE79 /* FileMapper.swift */; };
 		41874A07244CD84A00B4FE79 /* CompanyDataNil.json in Resources */ = {isa = PBXBuildFile; fileRef = 41874A04244CD60000B4FE79 /* CompanyDataNil.json */; };
 		41874A0A244CD96D00B4FE79 /* CountryAllData.json in Resources */ = {isa = PBXBuildFile; fileRef = 41874A09244CD96D00B4FE79 /* CountryAllData.json */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		1CA8D8F4961143BC77F86B91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3F38B2430B5A85A4336000EA /* Pods_iOSMovieDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMovieDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416A2967245274EF00ECEA0F /* ProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
+		416A296A245275C300ECEA0F /* ServiceMockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMockProtocol.swift; sourceTree = "<group>"; };
 		418749F8244CCC7100B4FE79 /* FileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMapper.swift; sourceTree = "<group>"; };
 		418749FB244CCFE600B4FE79 /* CompanyAllData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CompanyAllData.json; sourceTree = "<group>"; };
 		41874A04244CD60000B4FE79 /* CompanyDataNil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CompanyDataNil.json; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 				EDD666A5193E65469D7E4BC3 /* Pods-iOSMovieDB_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		416A2966245274A500ECEA0F /* ProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				416A2967245274EF00ECEA0F /* ProviderTests.swift */,
+				416A296A245275C300ECEA0F /* ServiceMockProtocol.swift */,
+			);
+			name = ProviderTests;
 			sourceTree = "<group>";
 		};
 		418749F7244CCC3000B4FE79 /* FileMapper */ = {
@@ -197,6 +210,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				416A2966245274A500ECEA0F /* ProviderTests */,
 				41874A2E244E808200B4FE79 /* ServiceTests */,
 				418749FA244CCFCA00B4FE79 /* Json */,
 				418749F7244CCC3000B4FE79 /* FileMapper */,
@@ -449,9 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416A2969245274FD00ECEA0F /* ProviderTests.swift in Sources */,
 				41874A30244E809E00B4FE79 /* ApiRouterTests.swift in Sources */,
 				418749FF244CD3E100B4FE79 /* FileMapper.swift in Sources */,
 				41CF0CF3244BE31700C45F1E /* ModelTests.swift in Sources */,
+				416A296B245275C300ECEA0F /* ServiceMockProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

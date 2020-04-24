@@ -19,6 +19,11 @@ public struct Company: Codable {
     var homepage: String
     var parentCompany: ParentCompany?
     
+    var logoUrl: URL? {
+        guard let logoPath = self.logoPath else { return nil }
+        return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case logoPath = "logo_path"
@@ -29,12 +34,6 @@ public struct Company: Codable {
         case homepage = "homepage"
         case parentCompany = "parent_company"
     }
-    
-    func getURLLogo() -> URL? {
-        guard let logoPath = self.logoPath else { return nil }
-        return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
-    }
-
 }
 
 
@@ -43,6 +42,11 @@ public struct ResumeCompany: Codable {
     var logoPath: String?
     var name: String
     var originCountry: String
+    
+    var logoUrl: URL? {
+        guard let logoPath = self.logoPath else { return nil }
+        return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
+    }
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
