@@ -8,12 +8,12 @@
 import Foundation
 
 
-enum Result<Value> {
-    case success(data: Value)
-    case failure(error: ErrorService)
+public enum Result<Value> {
+    case success(_ data: Value)
+    case failure(_ error: ErrorService)
 }
 
-enum ErrorService: Error {
+public enum ErrorService: Error {
     case ErrorNotConnectedToInternet
     case ErrorBadUrl
     case ErrorTimeOut
@@ -21,11 +21,11 @@ enum ErrorService: Error {
     case ErrorNetworkConnectionLost
     case ErrorBadServerResponse
     case ErrorUserAuthenticationRequired
-    case ErrorMapperModel
+    case ErrorMapperModel(_ error: Error )
     case ErrorUnknown
 }
 
-protocol ServiceProtocol {
+public protocol ServiceProtocol {
     
     typealias resultCompletion = (Result<Data>) -> Void
     
@@ -35,8 +35,5 @@ protocol ServiceProtocol {
     func fetchPopular(page: Int, completion: @escaping resultCompletion)
     func fetchNowPlaying(page: Int, completion: @escaping resultCompletion)
     func fetchLatest(completion: @escaping resultCompletion)
-    
-    init(baseUrl: String,
-         apiKey: String,
-         configuration: URLSessionConfiguration)
+
 }
