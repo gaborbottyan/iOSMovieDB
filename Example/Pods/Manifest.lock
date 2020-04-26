@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
-  - iOSMovieDB (0.1.0):
+  - iOSMovieDB (0.0.1):
     - Alamofire (~> 4.9)
   - Nimble (7.3.4)
   - Quick (1.2.0)
@@ -22,10 +22,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  iOSMovieDB: fbfc82a4d91532380a8aae8d22d4c4e1e6730ac3
+  iOSMovieDB: 57188b0af064ef1d16d658c2f437713dc1ecb92f
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 098077f4e30cf4697b8a217f36d6197055254036
+PODFILE CHECKSUM: cad582d5c47a14be76637cf69b20e5517c44ccbc
 
 COCOAPODS: 1.8.4
