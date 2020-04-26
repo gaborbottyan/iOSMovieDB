@@ -63,7 +63,7 @@
 		41874A24244CEC7900B4FE79 /* ResumeCompanyNil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ResumeCompanyNil.json; sourceTree = "<group>"; };
 		41874A2F244E809E00B4FE79 /* ApiRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouterTests.swift; sourceTree = "<group>"; };
 		41CF0CF1244BE30300C45F1E /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
-		4D0AFAD84E3910CA9F922EC3 /* iOSMovieDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSMovieDB.podspec; path = ../iOSMovieDB.podspec; sourceTree = "<group>"; };
+		4D0AFAD84E3910CA9F922EC3 /* iOSMovieDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSMovieDB.podspec; path = ../iOSMovieDB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		531C831CB5158C8A37B6C3C9 /* Pods-iOSMovieDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMovieDB_Example.release.xcconfig"; path = "Target Support Files/Pods-iOSMovieDB_Example/Pods-iOSMovieDB_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* iOSMovieDB_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMovieDB_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
