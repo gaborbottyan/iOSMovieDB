@@ -22,16 +22,16 @@ enum ApiRouter {
         case .getMovie(let id):
             return "\(ApiRouter.baseURL)/\(id)"
             
-        case .getTopRated(let page):
+        case .getTopRated:
             return "\(ApiRouter.baseURL)/top_rated"
             
-        case .getUpcoming(let page):
+        case .getUpcoming:
             return "\(ApiRouter.baseURL)/upcoming"
             
-        case .getPopular(let page):
+        case .getPopular:
             return "\(ApiRouter.baseURL)/popular"
             
-        case .getNowPlaying(let page):
+        case .getNowPlaying:
             return "\(ApiRouter.baseURL)/now_playing"
             
         case .getLatest:
