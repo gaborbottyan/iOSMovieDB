@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'iOSMovieDB'
   s.version          = '0.0.1'
-  s.summary          = 'A short description of iOSMovieDB.'
+  s.summary          = 'A library to connect with a www.themoviedb.org API'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A library to connect with a www.themoviedb.org API NO PRODUCTION purpose only a test to create a library and not repeat code to demo project'
 
   s.homepage         = 'https://github.com/diazavilasebastian/iOSMovieDB'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
