@@ -10,9 +10,9 @@ import Alamofire
 
 public class ApiService: ServiceProtocol {
     
-    public required init(baseUrl: String, apiKey: String, configuration: URLSessionConfiguration = .default) {
+    public required init(apiKey: String, configuration: URLSessionConfiguration = .default) {
         networkingManager = SessionManager(configuration: configuration)
-        Credencial.shared.addCredencial(baseUrl: baseUrl, apiKey: apiKey)
+        Credencial.shared.addCredencial(apiKey: apiKey)
     }
     
     var networkingManager: SessionManager

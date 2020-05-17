@@ -10,14 +10,12 @@ import Foundation
 class Credencial {
     
     static var shared: Credencial = Credencial()
-    
-    var baseURL: String = ""
+
     var apiKey: String = ""
 
     private init() { }
     
-    func addCredencial(baseUrl: String, apiKey: String) {
-        self.baseURL = baseUrl
+    func addCredencial(apiKey: String) {
         self.apiKey = apiKey
     }
     
