@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSMovieDB'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A library to connect with a www.themoviedb.org API'
 
 # This description is used to generate tags and improve search results.
