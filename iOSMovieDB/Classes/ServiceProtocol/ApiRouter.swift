@@ -66,6 +66,6 @@ extension ApiRouter: URLRequestConvertible {
 }
 
 extension ApiRouter {
-    static let baseURL = Credencial.shared.baseURL
+    static let baseURL = "https://api.themoviedb.org/3/movie"
     static let ApiKey = Credencial.shared.apiKey
 }
