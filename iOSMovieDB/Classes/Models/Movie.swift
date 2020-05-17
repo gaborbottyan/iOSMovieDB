@@ -10,32 +10,32 @@ import Foundation
 
 public struct Movie: Codable {
 
-    var id: Int
-    var originalTitle: String
-    var overview: String
-    var originalLanguage: String
-    var title: String
-    var popularity: Double
-    var voteAverage: Double
-    var adult: Bool
-    var budget: Int
-    var releaseDate: String
-    var revenue: Int
-    var video: Bool
-    var voteCount: Int
+    public var id: Int
+    public var originalTitle: String
+    public var overview: String
+    public var originalLanguage: String
+    public var title: String
+    public var popularity: Double
+    public var voteAverage: Double
+    public var adult: Bool
+    public var budget: Int
+    public var releaseDate: String
+    public var revenue: Int
+    public var video: Bool
+    public var voteCount: Int
     
-    var imdbId: String?
+    public var imdbId: String?
     var posterPath: String?
-    var productionCompanies: [ResumeCompany]? = []
-    var genres: [Genre]? = []
-    var status: String?
-    var tagline: String?
-    var backdropPath: String?
-    var belongsToCollection: ResumeCollection?
-    var homePage: String?
-    var productionCountries: [Country]? = []
-    var runtime: Int?
-    var spokenLanguages: [Language] = []
+    public var productionCompanies: [ResumeCompany]? = []
+    public var genres: [Genre]? = []
+    public var status: String?
+    public var tagline: String?
+    public var backdropPath: String?
+    public var belongsToCollection: ResumeCollection?
+    public var homePage: String?
+    public var productionCountries: [Country]? = []
+    public var runtime: Int?
+    public var spokenLanguages: [Language] = []
     
     var urlPoster: URL? {
         guard let posterPath = self.posterPath else { return nil }
@@ -93,21 +93,21 @@ public struct Movie: Codable {
 
 public struct MovieResume: Codable {
     
-    var adult: Bool
-    var overview: String
-    var releaseDate: String
-    var genreIds: [Int]
-    var id: Int
-    var originalTitle: String
-    var originalLanguage: String
-    var title: String
-    var popularity: Double
-    var voteCount: Int
-    var video: Bool
-    var voteAverage: Double
+    public var adult: Bool
+    public var overview: String
+    public var releaseDate: String
+    public var genreIds: [Int]
+    public var id: Int
+    public var originalTitle: String
+    public var originalLanguage: String
+    public var title: String
+    public var popularity: Double
+    public var voteCount: Int
+    public var video: Bool
+    public var voteAverage: Double
     
     var posterPath: String?
-    var backdropPath: String?
+    public var backdropPath: String?
 
     var urlPoster: URL? {
         guard let posterPath = self.posterPath else { return nil }

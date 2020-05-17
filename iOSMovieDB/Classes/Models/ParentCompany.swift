@@ -8,9 +8,9 @@
 import Foundation
 
 public struct ParentCompany: Codable {
-    var id: Int
+    public var id: Int
     var logoPath: String?
-    var name: String
+    public var name: String
     
     var logoUrl: URL? {
         guard let logoPath = self.logoPath else { return nil }

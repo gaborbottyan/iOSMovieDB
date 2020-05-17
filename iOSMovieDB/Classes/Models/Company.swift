@@ -10,14 +10,14 @@ import Foundation
 
 public struct Company: Codable {
 
-    var id: Int
+    public var id: Int
     var logoPath: String?
-    var name: String
-    var originCountry: String
-    var description: String
-    var headquarters: String
-    var homepage: String
-    var parentCompany: ParentCompany?
+    public var name: String
+    public var originCountry: String
+    public var description: String
+    public var headquarters: String
+    public var homepage: String
+    public var parentCompany: ParentCompany?
     
     var logoUrl: URL? {
         guard let logoPath = self.logoPath else { return nil }
@@ -38,10 +38,10 @@ public struct Company: Codable {
 
 
 public struct ResumeCompany: Codable {
-    var id: Int
+    public var id: Int
     var logoPath: String?
-    var name: String
-    var originCountry: String
+    public var name: String
+    public var originCountry: String
     
     var logoUrl: URL? {
         guard let logoPath = self.logoPath else { return nil }

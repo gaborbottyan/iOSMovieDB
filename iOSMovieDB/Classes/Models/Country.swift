@@ -8,8 +8,8 @@
 import Foundation
 
 public struct Country: Codable {
-    var iso: String
-    var name: String
+    public var iso: String
+    public var name: String
     
     enum CodingKeys: String, CodingKey {
         case iso = "iso_3166_1"

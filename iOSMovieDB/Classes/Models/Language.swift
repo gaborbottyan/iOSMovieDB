@@ -9,8 +9,8 @@ import Foundation
 
 public struct Language: Codable {
     
-    var iso: String
-    var name: String
+    public var iso: String
+    public var name: String
     
     enum CodingKeys: String, CodingKey {
         case iso = "iso_639_1"

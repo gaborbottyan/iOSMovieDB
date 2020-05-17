@@ -9,6 +9,6 @@
 import Foundation
 
 public struct PageMovies: Codable {
-    var page: Int
-    var results: [MovieResume]
+    public var page: Int
+    public var results: [MovieResume]
 }

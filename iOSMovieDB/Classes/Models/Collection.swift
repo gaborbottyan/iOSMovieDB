@@ -9,12 +9,12 @@ import Foundation
 
 public struct Collection: Codable {
     
-    var id: Int
-    var name: String
-    var overview: String
-    var backdropPath: String
-    var parts: [MovieResume]
-    var posterPath: String?
+    public var id: Int
+    public var name: String
+    public var overview: String
+    public var backdropPath: String
+    public var parts: [MovieResume]
+    public var posterPath: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -28,9 +28,9 @@ public struct Collection: Codable {
 
 public struct ResumeCollection: Codable {
 
-    var id: Int
-    var name: String
-    var backdropPath: String
+    public var id: Int
+    public var name: String
+    public var backdropPath: String
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
