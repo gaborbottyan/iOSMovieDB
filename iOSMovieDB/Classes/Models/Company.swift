@@ -19,7 +19,7 @@ public struct Company: Codable {
     public var homepage: String
     public var parentCompany: ParentCompany?
     
-    var logoUrl: URL? {
+    public var logoUrl: URL? {
         guard let logoPath = self.logoPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
     }
@@ -43,7 +43,7 @@ public struct ResumeCompany: Codable {
     public var name: String
     public var originCountry: String
     
-    var logoUrl: URL? {
+    public var logoUrl: URL? {
         guard let logoPath = self.logoPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
     }
