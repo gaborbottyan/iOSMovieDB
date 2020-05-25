@@ -37,7 +37,7 @@ public struct Movie: Codable {
     public var runtime: Int?
     public var spokenLanguages: [Language] = []
     
-    var urlPoster: URL? {
+    public var urlPoster: URL? {
         guard let posterPath = self.posterPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500"+posterPath)!
     }
@@ -109,7 +109,7 @@ public struct MovieResume: Codable {
     var posterPath: String?
     public var backdropPath: String?
 
-    var urlPoster: URL? {
+    public var urlPoster: URL? {
         guard let posterPath = self.posterPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500"+posterPath)!
     }

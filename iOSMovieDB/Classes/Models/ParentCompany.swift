@@ -12,7 +12,7 @@ public struct ParentCompany: Codable {
     var logoPath: String?
     public var name: String
     
-    var logoUrl: URL? {
+    public var logoUrl: URL? {
         guard let logoPath = self.logoPath else { return nil }
         return URL(string: "https://image.tmdb.org/t/p/w500"+logoPath)
     }
