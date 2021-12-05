@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Source/Classes/**/*'
   s.swift_version = ['4.2']
