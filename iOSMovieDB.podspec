@@ -29,11 +29,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '8.0'
 
-  s.source_files = 'iOSMovieDB/Classes/**/*'
+  s.source_files = 'Source/Classes/**/*'
   s.swift_version = ['4.2']
   
   # s.resource_bundles = {
-  #   'iOSMovieDB' => ['iOSMovieDB/Assets/*.png']
+  #   'iOSMovieDB' => ['Source/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
